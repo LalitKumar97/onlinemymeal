@@ -1,0 +1,230 @@
+/* CSS ReSet*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 50px;
+}
+/* Navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+/*   Navigation bar Logo and Images */
+#logo {
+  margin: 2px 3px;
+}
+#logo img {
+  margin: 2px 10px;
+  padding: 9px 4px;
+  height: 25px;
+}
+/* navigation bar item */
+#navbar ul {
+  display: flex;
+  /* margin-left: 343px; */
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  display: block;
+  color: white;
+  padding: 3px 4px;
+  margin: 3px 19px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 220px;
+  height: 420px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url("../image/bg.jpg");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 67%;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+#home p {
+  margin: 4px;
+  color: white;
+  font-size: 1.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* Services Section */
+#services {
+  margin: 11px;
+  display: flex;
+}
+
+#services .box {
+  border: 4px solid red;
+  border-radius: 10px;
+  padding: 34px;
+  margin: 11px;
+  background-color: rgb(211, 219, 219);
+}
+
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+#services .box p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* Clients Section */
+#client-section {
+  position: relative;
+  /* height: 263px; */
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../image/conatct.png");
+  width: 100%;
+  height: 260px;
+  z-index: -1;
+  opacity: 0.7;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  padding: 34px;
+}
+.client-item img {
+  height: 144px;
+}
+/* contact section */
+#contact {
+  position: relative;
+  height: 440px;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background: url("../image/bg.jpg");
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.2rem;
+  border-radius: 19px;
+  font-size: 0.9rem;
+}
+#contact-box form {
+  width: 33%;
+}
+#contact-box label {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group [placeholder]{
+  text-align: center;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 3px 9px;
+}
+
+/* Utility classess */
+.h-primary {
+  /* color: rgb(167, 166, 241); */
+  padding: 10px;
+  font-size: 2.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h-secondary {
+  color: rgb(9, 92, 64);
+  font-size: 1.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 10px;
+}
+
+.btn {
+  width: 200px;
+  padding: 6px 20px;
+  text-align: center;
+  border: 2px solid black;
+  margin: 20px;
+  border-radius: 24px;
+  font-size: 1.2rem;
+  background: transparent;
+  color: rgb(247, 101, 4);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn span{
+  background: lightblue;
+  width: 0%;
+  height: 100%;
+  border-radius: 24px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 2s;
+}
+.btn:hover span{
+  width: 100%;
+
+}
+
+.btn:hover {
+  border: none;
+}
+.textcenter {
+  text-align: center;
+}
