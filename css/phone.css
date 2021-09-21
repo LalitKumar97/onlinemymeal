@@ -1,6 +1,3 @@
-body{
-    background-color: red;
-}
 /* navigation */
 #navbar{
     flex-direction: column;
@@ -36,6 +33,7 @@ padding: 2px 70px;
 
 }
 /* contact section */
+
 /* footer */
 /* utility classes */
 .h-primary{
