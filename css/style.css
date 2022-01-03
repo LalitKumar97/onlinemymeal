@@ -125,6 +125,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+   overflow: hidden;
 }
 .client-item {
   padding: 34px;
